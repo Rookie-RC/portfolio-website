@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { HiDownload, HiMail } from 'react-icons/hi';
-import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { IoLogoWechat } from "react-icons/io5";
 import TypewriterEffect from './TypewriterEffect';
 
 const Hero = () => {
@@ -24,9 +25,9 @@ const Hero = () => {
   };
 
   const socialLinks = [
-    { icon: FaGithub, href: 'https://github.com', label: 'GitHub' },
-    { icon: FaLinkedin, href: 'https://linkedin.com', label: 'LinkedIn' },
-    { icon: FaTwitter, href: 'https://twitter.com', label: 'Twitter' },
+    { icon: FaGithub, href: 'https://github.com/Rookie-RC', label: 'GitHub' },
+    { icon: FaLinkedin, href: 'https://www.linkedin.com/in/yu-wang-b81094333/', label: 'LinkedIn' },
+    { icon: IoLogoWechat, href: '#', label: 'WeChat' },
   ];
 
   return (
@@ -115,8 +116,8 @@ const Hero = () => {
               transition={{ duration: 0.6, delay: 1.0 }}
               className="text-lg text-gray-600 dark:text-gray-400 mb-8 max-w-2xl"
             >
-              Passionate about creating exceptional digital experiences through clean code, 
-              innovative design, and cutting-edge technologies. Let's build something amazing together.
+              Passionate about accelerating drug discovery through computational chemistry,
+              AI-driven models, and innovative simulations. Let's design life-saving therapies together.
             </motion.p>
 
             {/* Action Buttons */}
@@ -137,7 +138,7 @@ const Hero = () => {
               </motion.button>
 
               <motion.a
-                href="/resume.pdf"
+                href="./assets/wangyu_CV.pdf"
                 download
                 className="btn-secondary flex items-center justify-center gap-2"
                 whileHover={{ scale: 1.05 }}
@@ -215,7 +216,7 @@ const Hero = () => {
               >
                 {/* Gradient Background */}
                 <div className="absolute inset-4 bg-gradient-to-br from-primary-500 to-purple-600 rounded-full opacity-20" />
-                
+
                 {/* Profile Image Placeholder */}
                 <div className="relative z-10 w-64 h-64 lg:w-80 lg:h-80 bg-gradient-to-br from-primary-500/20 to-purple-600/20 rounded-full flex items-center justify-center">
                   <span className="text-6xl lg:text-8xl">👨‍💻</span>
@@ -232,7 +233,7 @@ const Hero = () => {
                     transformOrigin: '0 140px',
                   }}
                 />
-                
+
                 <motion.div
                   className="absolute w-6 h-6 bg-purple-500 rounded-full"
                   animate={{ rotate: -360 }}

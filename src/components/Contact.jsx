@@ -2,7 +2,8 @@ import React, { useState, useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
 import { useForm } from 'react-hook-form';
 import { HiMail, HiPhone, HiLocationMarker, HiCheckCircle, HiExclamationCircle } from 'react-icons/hi';
-import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, } from 'react-icons/fa';
+import { IoLogoWechat } from "react-icons/io5";
 
 const Contact = () => {
   const ref = useRef(null);
@@ -24,10 +25,10 @@ const Contact = () => {
     try {
       // Simulate API call
       await new Promise(resolve => setTimeout(resolve, 2000));
-      
+
       // Here you would typically send the data to your backend
       console.log('Form data:', data);
-      
+
       setSubmitStatus('success');
       reset();
     } catch (error) {
@@ -41,19 +42,19 @@ const Contact = () => {
     {
       icon: HiMail,
       label: 'Email',
-      value: 'john.doe@example.com',
-      href: 'mailto:john.doe@example.com'
+      value: 'yu.wang1@fz-juelich.de',
+      href: 'mailto:yu.wang1@fz-juelich.de'
     },
     {
       icon: HiPhone,
       label: 'Phone',
-      value: '+1 (555) 123-4567',
-      href: 'tel:+15551234567'
+      value: '+86 19157730448',
+      href: 'tel:+8619157730448'
     },
     {
       icon: HiLocationMarker,
       label: 'Location',
-      value: 'San Francisco, CA',
+      value: 'Juelich, Germany',
       href: '#'
     }
   ];
@@ -62,19 +63,19 @@ const Contact = () => {
     {
       icon: FaGithub,
       label: 'GitHub',
-      href: 'https://github.com',
+      href: 'https://github.com/Rookie-RC',
       color: 'hover:text-gray-900 dark:hover:text-gray-100'
     },
     {
       icon: FaLinkedin,
       label: 'LinkedIn',
-      href: 'https://linkedin.com',
+      href: 'https://www.linkedin.com/in/yu-wang-b81094333/',
       color: 'hover:text-blue-600'
     },
     {
-      icon: FaTwitter,
-      label: 'Twitter',
-      href: 'https://twitter.com',
+      icon: IoLogoWechat,
+      label: 'Wechat',
+      href: '#',
       color: 'hover:text-blue-400'
     }
   ];
@@ -116,7 +117,7 @@ const Contact = () => {
               Get In Touch
             </h2>
             <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-              Ready to start your next project? Let's discuss how we can work together to bring your ideas to life.
+              Got any new idea in your mind? Let's discuss how we can work together to bring your ideas to life.
             </p>
           </motion.div>
 
@@ -128,8 +129,8 @@ const Contact = () => {
                   Let's Connect
                 </h3>
                 <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-8">
-                  I'm always open to discussing new opportunities, interesting projects, 
-                  or just having a friendly conversation about technology and development. 
+                  I'm always open to discussing new opportunities, interesting projects,
+                  or just having a friendly conversation about technology and development.
                   Feel free to reach out through any of the channels below.
                 </p>
 
@@ -314,9 +315,8 @@ const Contact = () => {
                   <motion.button
                     type="submit"
                     disabled={isSubmitting}
-                    className={`w-full btn-primary flex items-center justify-center gap-2 ${
-                      isSubmitting ? 'opacity-50 cursor-not-allowed' : ''
-                    }`}
+                    className={`w-full btn-primary flex items-center justify-center gap-2 ${isSubmitting ? 'opacity-50 cursor-not-allowed' : ''
+                      }`}
                     whileHover={!isSubmitting ? { scale: 1.02 } : {}}
                     whileTap={!isSubmitting ? { scale: 0.98 } : {}}
                   >
@@ -347,8 +347,8 @@ const Contact = () => {
                 Ready to Start a Project?
               </h3>
               <p className="text-gray-600 dark:text-gray-400 mb-6">
-                Whether you have a clear vision or just an idea, I'm here to help you 
-                turn it into reality. Let's collaborate and create something amazing together.
+                Whether you have a clear vision or just an idea, don't hesitate to contact me.
+                Let's collaborate and create something amazing together.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <motion.a
@@ -360,7 +360,7 @@ const Contact = () => {
                   View My Work
                 </motion.a>
                 <motion.a
-                  href="/resume.pdf"
+                  href="./assets/wangyu_CV.pdf"
                   download
                   className="btn-primary"
                   whileHover={{ scale: 1.05 }}

@@ -74,7 +74,7 @@ const About = () => {
               About Me
             </h2>
             <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-              Passionate developer with a love for creating digital experiences that make a difference
+              Blending chemistry with AI, I turn data into hope—building the medicines that could one day save lives.
             </p>
           </motion.div>
 
@@ -84,26 +84,30 @@ const About = () => {
               <h3 className="text-2xl sm:text-3xl font-bold mb-6 text-gray-900 dark:text-gray-100">
                 Crafting Digital Excellence
               </h3>
-              
+
               <div className="space-y-4 text-gray-600 dark:text-gray-400 leading-relaxed">
                 <p>
-                  I'm a passionate Full Stack Developer with over 3 years of experience creating 
-                  innovative web applications and digital solutions. My journey in web development 
-                  started with a curiosity about how things work behind the scenes, and it has 
-                  evolved into a deep passion for building exceptional user experiences.
+                  I'm a passionate computational chemist with over 3 years of experience applying
+                  advanced simulation techniques and AI-driven methods to accelerate drug discovery.
+                  My journey in computational chemistry started with a curiosity about the hidden
+                  mechanisms of molecules, and it has evolved into a mission to design therapies
+                  that can improve and save lives.
                 </p>
-                
+
                 <p>
-                  I specialize in modern JavaScript frameworks, particularly React, and have 
-                  extensive experience with Node.js, TypeScript, and various database technologies. 
-                  I believe in writing clean, maintainable code and following best practices to 
-                  ensure scalable and robust applications.
+                  I specialize in molecular dynamics simulations using tools like GROMACS, AMBER, Gaussian and so on,
+                  and I have a solid understanding of the underlying computational logic. By combining
+                  this expertise with Python scripting, I streamline workflows, analyze massive datasets,
+                  and select the right algorithms to build powerful AI models. My work focuses on
+                  optimizing drug structures, identifying suitable ligands, and designing targeted
+                  protein mutations.
                 </p>
-                
+
                 <p>
-                  When I'm not coding, you can find me exploring new technologies, contributing 
-                  to open-source projects, or sharing knowledge with the developer community. 
-                  I'm always eager to take on new challenges and collaborate on exciting projects.
+                  When I'm not running simulations or training AI models, you can find me exploring
+                  new scientific ideas, experimenting with innovative computational methods, or
+                  collaborating across disciplines to tackle complex biomedical challenges.
+                  I'm always eager to embrace new opportunities where science and technology meet.
                 </p>
               </div>
 
