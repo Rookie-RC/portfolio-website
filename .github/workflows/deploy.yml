@@ -28,17 +28,17 @@ jobs:
 
     - name: Setup Pages
       uses: actions/configure-pages@v4
-      if: github.ref == 'refs/heads/main'
+      if: github.ref == 'refs/heads/master'
 
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v3
-      if: github.ref == 'refs/heads/main'
+      if: github.ref == 'refs/heads/master'
       with:
         path: ./dist
 
     - name: Deploy to GitHub Pages
       id: deployment
-      if: github.ref == 'refs/heads/main'
+      if: github.ref == 'refs/heads/master'
       uses: actions/deploy-pages@v4
 
 # Grant GITHUB_TOKEN the permissions required to make a Pages deployment
