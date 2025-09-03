@@ -25,7 +25,7 @@ A stunning, modern portfolio website built with React, Tailwind CSS, and Framer 
 - **Framer Motion** - Animation library for React
 - **React Hook Form** - Form validation
 - **React Icons** - Icon library
-- **Typewriter Effect** - Animated typing effect
+- **typewriter-effect** - Animated typing effect
 
 ## 📋 Prerequisites
 
@@ -36,7 +36,7 @@ A stunning, modern portfolio website built with React, Tailwind CSS, and Framer 
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/portfolio-website.git
+   git clone https://github.com/Rookie-RC/portfolio-website.git
    cd portfolio-website
    ```
 
@@ -81,7 +81,7 @@ This project is configured for automatic deployment to GitHub Pages using GitHub
 
 3. **Automatic Deployment**
    - Every push to the `main` branch will trigger automatic deployment
-   - Your site will be available at `https://yourusername.github.io/portfolio-website`
+   - Your site will be available at `https://Rookie-RC.github.io/portfolio-website`
 
 ### Manual Deployment
 
@@ -119,7 +119,7 @@ Update the `base` property in `vite.config.js`:
 ```javascript
 export default defineConfig({
   plugins: [react()],
-  base: '/your-repository-name/',  // Change this to your repo name
+  base: '/portfolio-website/',  // Change this to your repo name
   build: {
     outDir: 'dist',
   },
@@ -131,7 +131,17 @@ export default defineConfig({
 ```
 portfolio-website/
 ├── public/
-│   └── vite.svg
+│   ├── assets/
+│   │   ├── og-image.svg
+│   │   └──wangyu_CV.pdf
+│   ├──apple-touch-icon.png
+│   ├──favicon-96x96.png
+│   ├──favicon.ico
+│   ├──favicon.svg
+│   ├──site.webmanifest
+│   ├──web-app-manifest-192x192.png
+│   └──web-app-manifest-512x512.png
+│ 
 ├── src/
 │   ├── components/
 │   │   ├── About.jsx
@@ -141,7 +151,8 @@ portfolio-website/
 │   │   ├── Hero.jsx
 │   │   ├── Navbar.jsx
 │   │   ├── Projects.jsx
-│   │   └── Skills.jsx
+│   │   ├── Skills.jsx
+│   │   └── TypewriterEffect.jsx
 │   ├── contexts/
 │   │   └── ThemeContext.jsx
 │   ├── App.jsx
@@ -173,6 +184,8 @@ portfolio-website/
 - `npm run build` - Build for production
 - `npm run preview` - Preview production build
 - `npm run lint` - Run ESLint
+- `npm run predeploy` - Build for deployment
+- `npm run deploy` - Deploy to GitHub Pages
 
 ## 📱 Browser Support
 
@@ -203,11 +216,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Support
 
-If you have any questions or need help with setup, feel free to reach out:
-
-- Email: john.doe@example.com
-- LinkedIn: [Your LinkedIn Profile](https://linkedin.com)
-- GitHub: [Your GitHub Profile](https://github.com)
+If you have any questions or need help with setup, please open an issue on the GitHub repository.
 
 ---
 
